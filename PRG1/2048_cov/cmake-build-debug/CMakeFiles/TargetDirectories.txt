@@ -1,0 +1,3 @@
+C:/Users/sanko/Desktop/PJATK/PRG1/2048_cov/cmake-build-debug/CMakeFiles/2048_cov.dir
+C:/Users/sanko/Desktop/PJATK/PRG1/2048_cov/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/sanko/Desktop/PJATK/PRG1/2048_cov/cmake-build-debug/CMakeFiles/rebuild_cache.dir
