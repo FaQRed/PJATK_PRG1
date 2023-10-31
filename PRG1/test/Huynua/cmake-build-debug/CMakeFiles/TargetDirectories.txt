@@ -1,0 +1,3 @@
+/Users/kiryl/Developer/PRG1/Programowanie 1/test/Huynua/cmake-build-debug/CMakeFiles/Huynua.dir
+/Users/kiryl/Developer/PRG1/Programowanie 1/test/Huynua/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kiryl/Developer/PRG1/Programowanie 1/test/Huynua/cmake-build-debug/CMakeFiles/rebuild_cache.dir

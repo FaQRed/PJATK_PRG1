@@ -1,0 +1,3 @@
+/Users/kiryl/PJATK/Programowanie 1/Lekcja2/cmake-build-debug/CMakeFiles/Lekcja2.dir
+/Users/kiryl/PJATK/Programowanie 1/Lekcja2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kiryl/PJATK/Programowanie 1/Lekcja2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

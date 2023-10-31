@@ -1,0 +1,3 @@
+/Users/kiryl/Developer/PRG1/Programowanie 1/Lekcja 5/Zad5/cmake-build-debug/CMakeFiles/Zad5.dir
+/Users/kiryl/Developer/PRG1/Programowanie 1/Lekcja 5/Zad5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kiryl/Developer/PRG1/Programowanie 1/Lekcja 5/Zad5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
