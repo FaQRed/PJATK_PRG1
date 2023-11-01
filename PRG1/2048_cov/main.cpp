@@ -134,7 +134,6 @@ void shiftDown(vector<vector<int>>& board) {
     }
 }
 
-Kiryl, [31.10.2023 17:42]
 int main() {
     int size;
     cin >> size;
