@@ -6,12 +6,12 @@
 using namespace std;
 
 // Функция для создания игровой доски размером size x size, заполненной нулями
-vector<vector<int>> createBoard(int size) {
-    return vector<vector<int>>(size, vector<int>(size, 0));
+vector<vector<int> > createBoard(int size) {
+    return vector<vector<int> >(size, vector<int>(size, 0));
 }
 
 // Функция для вывода игровой доски на стандартный вывод
-void printBoard(const vector<vector<int>>& board) {
+void printBoard(const vector<vector<int> >& board) {
     for (const vector<int>& row : board) {
         for (int num : row) {
             cout << num << ' ';
@@ -21,7 +21,7 @@ void printBoard(const vector<vector<int>>& board) {
 }
 
 // Функция для сдвига всех элементов влево
-void shiftLeft(vector<vector<int>>& board) {
+void shiftLeft(vector<vector<int> >& board) {
     int size = board.size();
     for (int i = 0; i < size; i++) {
         vector<int> newRow;
@@ -48,7 +48,7 @@ void shiftLeft(vector<vector<int>>& board) {
 }
 
 // Функция для сдвига всех элементов вправо
-void shiftRight(vector<vector<int>>& board) {
+void shiftRight(vector<vector<int> >& board) {
     int size = board.size();
     for (int i = 0; i < size; i++) {
         vector<int> newRow;
@@ -76,7 +76,7 @@ void shiftRight(vector<vector<int>>& board) {
 }
 
 // Функция для сдвига всех элементов вверх
-void shiftUp(vector<vector<int>>& board) {
+void shiftUp(vector<vector<int> >& board) {
     int size = board.size();
     for (int j = 0; j < size; j++) {
         vector<int> newCol;
@@ -105,7 +105,7 @@ void shiftUp(vector<vector<int>>& board) {
 }
 
 // Функция для сдвига всех элементов вниз
-void shiftDown(vector<vector<int>>& board) {
+void shiftDown(vector<vector<int> >& board) {
     int size = board.size();
     for (int j = 0; j < size; j++) {
         vector<int> newCol;
@@ -137,7 +137,7 @@ void shiftDown(vector<vector<int>>& board) {
 int main() {
     int size;
     cin >> size;
-    vector<vector<int>> board = createBoard(size);
+    vector<vector<int> > board = createBoard(size);
 
     while (true) {
         char op;
