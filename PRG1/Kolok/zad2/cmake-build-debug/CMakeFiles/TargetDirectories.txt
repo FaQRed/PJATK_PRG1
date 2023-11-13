@@ -1,0 +1,3 @@
+/Users/kiryl/Desktop/PJATK_project/PRG1/Kolok/zad2/cmake-build-debug/CMakeFiles/zad2.dir
+/Users/kiryl/Desktop/PJATK_project/PRG1/Kolok/zad2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kiryl/Desktop/PJATK_project/PRG1/Kolok/zad2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

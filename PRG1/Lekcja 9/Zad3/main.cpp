@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     const int rozmiar = 10;
-    int* tablica1 = new int[rozmiar];
-    int* tablica2 = new int[rozmiar];
+    int *tablica1 = new int[rozmiar];
+    int *tablica2 = new int[rozmiar];
 
     cout << "Wprowadź 10 elementów do pierwszej tablicy:" << endl;
     for (int i = 0; i < rozmiar; i++) {
@@ -20,7 +20,7 @@ int main() {
     }
 
     int nowyRozmiar = 2 * rozmiar + 2;
-    int* nowaTablica = new int[nowyRozmiar];
+    int *nowaTablica = new int[nowyRozmiar];
 
     for (int i = 0; i < rozmiar; i++) {
         nowaTablica[i] = tablica1[i];

@@ -28,16 +28,16 @@ int main() {
     }
 
 
-    int* minElement = &tablica[0];
-    int* maxElement = &tablica[0];
-    int suma = tablica[0];
+    int minElement = *tablica;
+    int maxElement = *tablica;
+    int suma = *tablica;
 
     for (int i = 1; i < rozmiar; i++) {
-        if (tablica[i] < *minElement) {
-            minElement = &tablica[i];
+        if (tablica[i] < minElement) {
+            minElement = tablica[i];
         }
-        if (tablica[i] > *maxElement) {
-            maxElement = &tablica[i];
+        if (tablica[i] > maxElement) {
+            maxElement = tablica[i];
         }
         suma += tablica[i];
     }
@@ -49,8 +49,8 @@ int main() {
     }
     cout << endl;
 
-    cout << "Najmniejszy element: " << *minElement << endl;
-    cout << "Największy element: " << *maxElement << endl;
+    cout << "Najmniejszy element: " << minElement << endl;
+    cout << "Największy element: " << maxElement << endl;
     cout << "Suma wszystkich elementów: " << suma << endl;
 
 
