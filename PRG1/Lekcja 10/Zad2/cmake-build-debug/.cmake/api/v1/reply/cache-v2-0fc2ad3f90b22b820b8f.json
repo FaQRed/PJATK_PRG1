@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad1/cmake-build-debug"
+			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad1"
+			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Zad1"
+			"value" : "Zad2"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1134,7 +1134,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Zad1_BINARY_DIR",
+			"name" : "Zad2_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1143,10 +1143,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad1/cmake-build-debug"
+			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad2/cmake-build-debug"
 		},
 		{
-			"name" : "Zad1_IS_TOP_LEVEL",
+			"name" : "Zad2_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1158,7 +1158,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Zad1_SOURCE_DIR",
+			"name" : "Zad2_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad1"
+			"value" : "/Users/kiryl/Desktop/PJATK_project/PRG1/Lekcja 10/Zad2"
 		}
 	],
 	"kind" : "cache",
