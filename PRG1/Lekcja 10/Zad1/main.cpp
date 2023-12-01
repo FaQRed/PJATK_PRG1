@@ -1,21 +1,22 @@
 #include <iostream>
+using namespace std;
 
 int main() {
 
     int *tablica = new int[5];
 
 
-    std::cout << "Podaj 5 liczb calkowitych:\n";
+    cout << "Podaj 5 liczb calkowitych:\n";
     for (int i = 0; i < 5; ++i) {
-        std::cin >> tablica[i];
+        cin >> tablica[i];
     }
 
 
-    std::cout << "Tablica 1:\n";
+    cout << "Tablica 1:\n";
     for (int i = 0; i < 5; ++i) {
-        std::cout << *(tablica + i) << " ";
+        cout << *(tablica + i) << " ";
     }
-    std::cout << "\n";
+    cout << "\n";
 
 
     for (int i = 0; i < 5; ++i) {
@@ -27,11 +28,11 @@ int main() {
     }
 
 
-    std::cout << "Tablica 2:\n";
+    cout << "Tablica 2:\n";
     for (int i = 0; i < 5; ++i) {
-        std::cout << *(tablica + i) << " ";
+        cout << *(tablica + i) << " ";
     }
-    std::cout << "\n";
+    cout << "\n";
 
 
     delete[] tablica;

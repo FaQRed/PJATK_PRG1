@@ -1,39 +1,44 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 struct Student {
-    std::string imię;
-    std::string nazwisko;
-    int nrIndeksu;
+    string name;
+    string surname;
+    int indexNumber;
 };
 
-// Funkcja dodająca studenta do listy
-void dodajStudenta(Student *studentsArray, int &numOfStudents, int rozmiar) {
-    if (numOfStudents < rozmiar) {
-        std::cout << "Podaj imię studenta: ";
-        std::cin >> studentsArray[numOfStudents].imię;
 
-        std::cout << "Podaj nazwisko studenta: ";
-        std::cin >> studentsArray[numOfStudents].nazwisko;
+void addStudent(Student studentsArray[], int &numOfStudents, int size) {
+    if (numOfStudents < size) {
+        cout << "Name of student: ";
+        cin >> studentsArray[numOfStudents].name;
 
-        std::cout << "Podaj numer indeksu studenta: ";
-        std::cin >> studentsArray[numOfStudents].nrIndeksu;
+        cout << "Surname of student: ";
+        cin >> studentsArray[numOfStudents].surname;
 
-        std::cout << "Student dodany pomyślnie.\n";
+        cout << "Student's index number: " << endl;
+        cin >> studentsArray[numOfStudents].indexNumber;
+
+        cout << "Added Student.\n";
         numOfStudents++;
     } else {
-        std::cout << "Lista studentów jest pełna.\n";
+        cout << "List is full of students.\n";
     }
 }
 
-// Funkcja wyświetlająca listę studentów
-void wyswietlListeStudentow(const Student *studentsArray, int numOfStudents) {
+
+void showStudents(const Student *studentsArray, int numOfStudents) {
     if (numOfStudents == 0) {
-        std::cout << "Lista studentów jest pusta.\n";
+        cout << "List is null.\n";
     } else {
-        std::cout << "Lista studentów:\n";
+        cout << "List of students:\n";
         for (int i = 0; i < numOfStudents; ++i) {
-            std::cout << "Imię: " << studentsArray[i].imię << "\tNazwisko: " << studentsArray[i].nazwisko << "\tNr indeksu: " << studentsArray[i].nrIndeksu << "\n";
+            cout << "Name: " << studentsArray[i].name << endl <<
+                 "Surname: " << studentsArray[i].surname << endl <<
+                 "Nr indeksu: " << studentsArray[i].indexNumber << endl;
+            cout << "--------------------------------------" << endl;
         }
     }
 }
@@ -42,31 +47,25 @@ int main() {
     const int maxStudents = 1000;
     Student studentsArray[maxStudents];
     int numOfStudents = 0;
-
-    char wybór;
+    char casing;
 
     do {
-        std::cout << "\nMenu:\n";
-        std::cout << "1. Dodaj studenta\n";
-        std::cout << "2. Wyświetl listę studentów\n";
-        std::cout << "3. Wyjście\n";
-        std::cout << "Wybierz opcję: ";
-        std::cin >> wybór;
+        cout << "1. Add student\n";
+        cout << "2. Show list of students\n";
+        cin >> casing;
 
-        switch (wybór) {
+        switch (casing) {
             case '1':
-                dodajStudenta(studentsArray, numOfStudents, maxStudents);
+                addStudent(studentsArray, numOfStudents, maxStudents);
                 break;
             case '2':
-                wyswietlListeStudentow(studentsArray, numOfStudents);
-                break;
-            case '3':
-                std::cout << "Wyjście z programu.\n";
+                showStudents(studentsArray, numOfStudents);
                 break;
             default:
-                std::cout << "Niepoprawny wybór. Spróbuj ponownie.\n";
+                cout << "Exiting.\n";
+                break;
         }
-    } while (wybór != '3');
+    } while (casing == '2' || casing == '1');
 
     return 0;
 }
