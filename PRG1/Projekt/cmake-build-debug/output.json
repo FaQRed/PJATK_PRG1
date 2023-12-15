@@ -1,0 +1,14 @@
+[
+    {
+        "firstName": "Jane",
+        "lastName": "Johnson",
+        "title": "Another Book",
+        "year": 2010
+    },
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "title": "Example Book",
+        "year": 2015
+    }
+]

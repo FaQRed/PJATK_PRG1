@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Projekt"
+			"path" : "Projekt.exe"
+		},
+		{
+			"path" : "Projekt.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fdiagnostics-color=always"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -66,12 +69,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "Projekt",
-	"nameOnDisk" : "Projekt",
+	"nameOnDisk" : "Projekt.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,7 +98,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -112,6 +120,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Book.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "json.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],
