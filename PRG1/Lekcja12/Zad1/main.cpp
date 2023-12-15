@@ -10,6 +10,7 @@ class pet{
 
 };
 class dog : public pet{
+
      void Bark() override {
        cout << "Bark";
    }
