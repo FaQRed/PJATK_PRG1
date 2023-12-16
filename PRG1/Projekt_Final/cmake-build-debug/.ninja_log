@@ -1,0 +1,17 @@
+# ninja log v5
+1	456	1702749243446212931	CMakeFiles/Projekt_Final.dir/book.cpp.o	2bed475324b157cb
+1	427	1702754938741701147	CMakeFiles/Projekt_Final.dir/main.cpp.o	34c172c224668d2e
+427	465	1702754938785709701	Projekt_Final	ab13a7d629651d9d
+3	710	1702755657628068634	CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o	e17b9e032762284f
+2	712	1702755657632161446	CMakeFiles/Projekt_Final.dir/main.cpp.o	34c172c224668d2e
+712	762	1702755657683305994	Projekt_Final	48ea2321371a31b9
+1	650	1702755853105927451	CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o	e17b9e032762284f
+0	651	1702755853109978804	CMakeFiles/Projekt_Final.dir/main.cpp.o	34c172c224668d2e
+651	697	1702755853155863992	Projekt_Final	48ea2321371a31b9
+1	387	1702755935378042595	CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o	e17b9e032762284f
+387	429	1702755935422682152	Projekt_Final	48ea2321371a31b9
+2	633	1702756359086732262	CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o	e17b9e032762284f
+1	634	1702756359090655483	CMakeFiles/Projekt_Final.dir/main.cpp.o	34c172c224668d2e
+634	681	1702756359137300967	Projekt_Final	48ea2321371a31b9
+0	408	1702756453600717287	CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o	e17b9e032762284f
+408	451	1702756453647096315	Projekt_Final	48ea2321371a31b9
