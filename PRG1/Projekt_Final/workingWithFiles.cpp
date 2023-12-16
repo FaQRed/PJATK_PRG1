@@ -10,14 +10,14 @@
 using namespace std;
 
 void workingWithFiles::writeToTxt(vector<book> &books, string fileName) {
-    std::ofstream txtFile(fileName);
+    std::ofstream txtFile(fileName + ".txt");
     if (txtFile.is_open()) {
         for (const auto &book: books) {
+            txtFile << "=====================================" << endl;
             txtFile << "Id: " << book.getId() << "\n";
             txtFile << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
             txtFile << "Title: " << book.getTitle() << "\n";
             txtFile << "Year: " << book.getYearOfIssue() << "\n";
-            txtFile << "=====================================" << endl;
         }
         txtFile.close();
         std::cout << "Data successfully written to the text file 'Library.txt'" << std::endl;
@@ -26,8 +26,8 @@ void workingWithFiles::writeToTxt(vector<book> &books, string fileName) {
     }
 }
 
-void workingWithFiles::outputFromTxt() {
-    ifstream file("Library.txt");
+void workingWithFiles::outputFromTxt(string filename) {
+    ifstream file(filename + ".txt");
     string content;
     if (file.is_open()) {
         string line;
@@ -35,10 +35,12 @@ void workingWithFiles::outputFromTxt() {
             content += line + "\n";
         }
         file.close();
-    } else cerr << "Error while opening a file";
+    } else cerr << "Error while opening a file" << endl;
     cout << content;
 
 }
+
+
 
 void workingWithFiles::createFile(string fileName) {
 

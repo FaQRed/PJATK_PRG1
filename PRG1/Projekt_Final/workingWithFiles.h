@@ -14,7 +14,7 @@ public:
     void createFile(string fileName);
     void writeToTxt(vector<book>& books, string fileName);
     void removeFile(string fileName);
-    void outputFromTxt();
+    void outputFromTxt(string filename);
 };
 
 

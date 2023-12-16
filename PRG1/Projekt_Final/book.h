@@ -4,9 +4,11 @@
 
 #ifndef PROJEKT_FINAL_BOOK_H
 #define PROJEKT_FINAL_BOOK_H
+
 #include "string"
 
 using namespace std;
+
 class book {
 private:
     int id;
@@ -39,8 +41,6 @@ public:
     void setYearOfIssue(int yearOfIssue);
 
 };
-
-
 
 
 #endif //PROJEKT_FINAL_BOOK_H

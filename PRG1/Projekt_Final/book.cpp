@@ -47,3 +47,4 @@ int book::getYearOfIssue() const {
 void book::setYearOfIssue(int yearOfIssue) {
     book::yearOfIssue = yearOfIssue;
 }
+
