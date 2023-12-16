@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/g++.exe")
+set(CMAKE_CXX_COMPILER "/opt/homebrew/Cellar/gcc/13.2.0/bin/g++-13")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "13.1.0")
+set(CMAKE_CXX_COMPILER_VERSION "13.2.0")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -14,19 +14,20 @@ set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")
 set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")
 set(CMAKE_CXX23_COMPILE_FEATURES "cxx_std_23")
 
-set(CMAKE_CXX_PLATFORM_ID "MinGW")
+set(CMAKE_CXX_PLATFORM_ID "Darwin")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
+set(CMAKE_CXX_COMPILER_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr")
+set(CMAKE_COMPILER_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr")
 
 
-
-set(CMAKE_AR "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ar.exe")
-set(CMAKE_CXX_COMPILER_AR "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ld.exe")
+set(CMAKE_AR "/Library/Developer/CommandLineTools/usr/bin/ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/homebrew/Cellar/gcc/13.2.0/bin/gcc-ar-13")
+set(CMAKE_RANLIB "/Library/Developer/CommandLineTools/usr/bin/ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/homebrew/Cellar/gcc/13.2.0/bin/gcc-ranlib-13")
+set(CMAKE_LINKER "/Library/Developer/CommandLineTools/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -74,10 +75,10 @@ if(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX)
 endif()
 
 
+set(CMAKE_CXX_SYSROOT_FLAG "-isysroot")
+set(CMAKE_CXX_OSX_DEPLOYMENT_TARGET_FLAG "-mmacosx-version-min=")
 
-
-
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/include;C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/x86_64-w64-mingw32/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
-set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/gcc/13.2.0/include/c++/13;/opt/homebrew/Cellar/gcc/13.2.0/include/c++/13/aarch64-apple-darwin23;/opt/homebrew/Cellar/gcc/13.2.0/include/c++/13/backward;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/include;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed;/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;emutls_w;gcc;gcc")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current;/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks")

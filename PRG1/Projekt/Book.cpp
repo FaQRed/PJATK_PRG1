@@ -4,8 +4,9 @@
 
 #include "Book.h"
 
-Book::Book(const string &authorName, const string &authorSurname, const string &title, const string &dateOfIssue)
-        : author_name(authorName), author_surname(authorSurname), title(title), dateOfIssue(dateOfIssue) {}
+Book::Book(const int &id, const string &authorName, const string &authorSurname, const string &title,
+           const int &dateOfIssue) : id(id), author_name(authorName), author_surname(authorSurname), title(title),
+                                        dateOfIssue(dateOfIssue) {}
 
 const string &Book::getAuthorName() const {
     return author_name;
@@ -31,11 +32,11 @@ void Book::setTitle(const string &title) {
     Book::title = title;
 }
 
-const string &Book::getDateOfIssue() const {
+const int &Book::getDateOfIssue() const {
     return dateOfIssue;
 }
 
-void Book::setDateOfIssue(const string &dateOfIssue) {
+void Book::setDateOfIssue(const int &dateOfIssue) {
     Book::dateOfIssue = dateOfIssue;
 }
 
@@ -43,4 +44,13 @@ ostream &operator<<(ostream &os, const Book &book) {
     os << "author_name: " << book.author_name << " author_surname: " << book.author_surname << " title: " << book.title
        << " dateOfIssue: " << book.dateOfIssue;
     return os;
+}
+
+const int &Book::getId() const {
+    return id;
+}
+
+
+void Book::setId(const int &id) {
+    Book::id = id;
 }

@@ -1,7 +1,9 @@
+Id: 1
 Author: Jane Johnson
 Title: Another Book
 Year: 2010
 
+Id: 2
 Author: John Doe
 Title: Example Book
 Year: 2015

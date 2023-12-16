@@ -1,12 +1,14 @@
 [
     {
         "firstName": "Jane",
+        "id": 1,
         "lastName": "Johnson",
         "title": "Another Book",
         "year": 2010
     },
     {
         "firstName": "John",
+        "id": 2,
         "lastName": "Doe",
         "title": "Example Book",
         "year": 2015

@@ -7,5 +7,7 @@ add_executable(Projekt main.cpp
         Book.cpp
         Book.h
         json.hpp
+        LinkedList.cpp
+        LinkedList.h
 )
 

@@ -9,14 +9,22 @@ using namespace std;
 
 
 class Book {
+
 private:
+    int id;
     string author_name;
     string author_surname;
     string title;
-    string dateOfIssue;
+    int dateOfIssue;
 
 public:
-    Book(const string &authorName, const string &authorSurname, const string &title, const string &dateOfIssue);
+
+    Book(const int &id, const string &authorName, const string &authorSurname, const string &title,
+         const int &dateOfIssue);
+
+    const int &getId() const;
+
+    void setId(const int &id);
 
     const string &getAuthorName() const;
 
@@ -30,9 +38,9 @@ public:
 
     void setTitle(const string &title);
 
-    const string &getDateOfIssue() const;
+    const int &getDateOfIssue() const;
 
-    void setDateOfIssue(const string &dateOfIssue);
+    void setDateOfIssue(const int &dateOfIssue);
 
     friend ostream &operator<<(ostream &os, const Book &book);
 };
