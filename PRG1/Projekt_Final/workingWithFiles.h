@@ -15,6 +15,7 @@ public:
     void writeToTxt(vector<book>& books, string fileName);
     void removeFile(string fileName);
     void outputFromTxt(string filename);
+    void parseFromFile(string filePath, vector<book> &books);
 };
 
 

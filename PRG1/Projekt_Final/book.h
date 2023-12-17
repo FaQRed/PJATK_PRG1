@@ -40,6 +40,7 @@ public:
 
     void setYearOfIssue(int yearOfIssue);
 
+    book(int id, const string &authorName, const string &authorSurname, const string &title, int yearOfIssue);
 };
 
 

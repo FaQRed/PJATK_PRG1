@@ -4,11 +4,10 @@
 #include "workingWithFiles.h"
 #include <algorithm>
 #include <cstdlib>
+#include "main.h"
 
-using namespace std;
-static vector<book> books;
 workingWithFiles wwf;
-
+ vector<book> books;
 void deleteLastBook(){
     books.pop_back();
 }
@@ -16,11 +15,11 @@ void deleteBookById(int id){
     for(auto it = books.begin(); it != books.end(); ++it){
         if(id == it->getId()){
             books.erase(it);
-        } else {
-            cout << "There is no such id in the list";
+            break;
         }
     }
 }
+
 bool compareByAuthorSurname(const book& book1, const book& book2) {
     return book1.getAuthorSurname() < book2.getAuthorSurname();
 }
@@ -79,7 +78,8 @@ int main() {
         cout << "\t\t9. Delete file" << endl;
         cout << "\t\t10. Output file" << endl;
         cout << "\t\t11. Output books array" << endl;
-        cout << "\t\t12. Exit" << endl;
+        cout << "\t\t12. Parse from file to Array" << endl;
+        cout << "\t\t13. Exit" << endl;
         cout << "\nPlease Enter Your Above Choice : ";
         int n;
         cin >> n;
@@ -98,6 +98,41 @@ int main() {
                 system("clear");
                 sort(books.begin(), books.end(), compareByTitle);
                 break;
+            case 4:
+                do{
+                    cout << "\n**************************************************************************\n";
+                    cout << "                     WELCOME TO LIBRARY MANAGEMENT SYSTEM                   \n";
+                    cout << "                                  SEARCH                                 \n";
+                    cout << "\n**************************************************************************\n\n";
+                    cout << "\t\t1. By author name" << endl;
+                    cout << "\t\t2. By author surname" << endl;
+                    cout << "\t\t3. By title" << endl;
+                    cout << "\t\t4. By year" << endl;
+                    cout << "\t\t5. Back to main menu" << endl;
+
+                    int criteria;
+                    cin >> criteria;
+                    switch (criteria) {
+                        case 1:
+                            //searchByAuthorName();
+                            break;
+                        case 2:
+                            //searchByAuthorSurname();
+                            break;
+                        case 3:
+                            //searchByTitle();
+                            break;
+                        case 4:
+                            //searchByYear();
+                            break;
+                        case 5:
+                            main();
+                            break;
+                    }
+                } while(true);
+
+
+
             case 5:
                 system("clear");
                 deleteLastBook();
@@ -109,6 +144,7 @@ int main() {
                 cout << "Enter id number to delete ";
                 cin >> id;
                 deleteBookById(id);
+                system("clear");
                 break;
             case 7: {
                 system("clear");
@@ -119,6 +155,8 @@ int main() {
                 break;
             case 8:
                 system("clear");
+                cout << "Enter File Name: ";
+                cin >> fileName;
                 wwf.writeToTxt(books, fileName);
                 break;
             case 9:
@@ -128,6 +166,7 @@ int main() {
                 wwf.removeFile(fileName);
                 break;
             case 10:
+                system("clear");
                 cout << "Enter File Name: ";
                 cin >> fileName;
                 wwf.outputFromTxt(fileName);
@@ -139,6 +178,13 @@ int main() {
                 else cout << "Array is empty";
                 break;
             case 12:
+                system("clear");
+                cout << "Enter File Name: ";
+                cin >> fileName;
+                wwf.parseFromFile(fileName, books);
+                break;
+
+            case 13:
                 system("clear");
                 cout << "Exiting from program...";
                 exit(0);

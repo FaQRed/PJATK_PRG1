@@ -7,4 +7,5 @@ add_executable(Projekt_Final main.cpp
         book.cpp
         book.h
         workingWithFiles.cpp
-        workingWithFiles.h)
+        workingWithFiles.h
+        main.h)

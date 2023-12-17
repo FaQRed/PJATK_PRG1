@@ -6,6 +6,8 @@
 #include "iostream"
 #include "string"
 #include "fstream"
+#include <cstdio>
+#include "main.h"
 
 using namespace std;
 
@@ -41,7 +43,6 @@ void workingWithFiles::outputFromTxt(string filename) {
 }
 
 
-
 void workingWithFiles::createFile(string fileName) {
 
     ofstream{fileName + ".txt"};
@@ -50,4 +51,38 @@ void workingWithFiles::createFile(string fileName) {
 void workingWithFiles::removeFile(string fileName) {
 
     remove((fileName + ".txt").c_str());
+}
+
+void workingWithFiles::parseFromFile(string fileName, vector<book> &books) {
+
+    ifstream file(fileName + ".txt");
+    string tempStr;
+    string string_id;
+    string author_name;
+    string author_surname;
+    string title;
+    string string_yearOfIssue;
+
+    if (!file.is_open()) {
+        cerr << "Error while opening a file" << endl;
+    } else {
+        while (file >> tempStr) {
+            getline(file, tempStr);
+            getline(file, tempStr, ':');
+            file >> tempStr;
+            getline(file, tempStr, ':');
+            file >> author_name >> author_surname;
+            getline(file, tempStr, ':');
+            getline(file, title);
+            getline(file, tempStr, ':');
+            file >> string_yearOfIssue;
+
+            int yearOfIssue = stoi(string_yearOfIssue);
+           books.emplace_back(author_name, author_surname, title, yearOfIssue);
+
+        }
+
+        file.close();
+    }
+
 }

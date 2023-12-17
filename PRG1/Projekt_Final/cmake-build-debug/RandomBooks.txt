@@ -1,0 +1,95 @@
+=====================================
+Id: 1
+Author: Kiryl Sankouski
+Title: Fairy Tale
+Year: 1994
+=====================================
+Id: 2
+Author: Kiryl Sankofgnfguski
+Title: Faifgnfgnry Tale
+Year: 199443
+=====================================
+Id: 3
+Author: Kisgsryl Sankouski
+Title: Faidfsry Tale
+Year: 1954
+=====================================
+Id: 4
+Author: Aria Johnson
+Title: Mystical Adventure
+Year: 2008
+=====================================
+Id: 5
+Author: Benjamin Smith
+Title: Enchanted Forest
+Year: 1982
+=====================================
+Id: 6
+Author: Emma White
+Title: Dreamland Chronicles
+Year: 2015
+=====================================
+Id: 7
+Author: David Brown
+Title: The Magical Mirror
+Year: 1976
+=====================================
+Id: 8
+Author: Sophia Turner
+Title: Starlight Kingdom
+Year: 1999
+=====================================
+Id: 9
+Author: Ethan Davis
+Title: Whimsical Wonders
+Year: 2005
+=====================================
+Id: 10
+Author: Lily Martinez
+Title: The Secret Garden
+Year: 1989
+=====================================
+Id: 11
+Author: Oliver Robinson
+Title: Timeless Tales
+Year: 1968
+=====================================
+Id: 12
+Author: Ava Wilson
+Title: Moonlit Serenade
+Year: 2012
+=====================================
+Id: 13
+Author: Jackson Miller
+Title: The Dragon's Quest
+Year: 1978
+=====================================
+Id: 14
+Author: Mia Taylor
+Title: Starry Night Adventure
+Year: 2003
+=====================================
+Id: 15
+Author: Daniel Brown
+Title: Whispering Winds
+Year: 1991
+=====================================
+Id: 16
+Author: Harper Lee
+Title: Celestial Symphony
+Year: 1965
+=====================================
+Id: 17
+Author: Emily Walker
+Title: Rainbow Meadows
+Year: 1987
+=====================================
+Id: 18
+Author: Christopher Hill
+Title: The Enchanted Key
+Year: 2001
+=====================================
+Id: 19
+Author: Zoey Clark
+Title: Cosmic Dreams
+Year: 1972

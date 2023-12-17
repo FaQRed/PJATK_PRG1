@@ -48,3 +48,8 @@ void book::setYearOfIssue(int yearOfIssue) {
     book::yearOfIssue = yearOfIssue;
 }
 
+book::book(int id, const string &authorName, const string &authorSurname, const string &title, int yearOfIssue) : id(
+        id), author_name(authorName), author_surname(authorSurname), title(title), yearOfIssue(yearOfIssue) {
+
+}
+
