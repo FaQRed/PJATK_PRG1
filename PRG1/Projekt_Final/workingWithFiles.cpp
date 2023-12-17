@@ -78,11 +78,78 @@ void workingWithFiles::parseFromFile(string fileName, vector<book> &books) {
             file >> string_yearOfIssue;
 
             int yearOfIssue = stoi(string_yearOfIssue);
-           books.emplace_back(author_name, author_surname, title, yearOfIssue);
+            books.emplace_back(author_name, author_surname, title, yearOfIssue);
 
         }
 
         file.close();
-    }
+    }}
 
+void workingWithFiles::searchByAuthorSurname(vector<book> &books) {
+    string authorSurname;
+    cout << "Enter author surname to search: ";
+    cin.ignore();
+    getline(cin, authorSurname);
+    for(const auto &book : books){
+        if(book.getAuthorSurname() == authorSurname){
+            cout << "=====================================" << endl;
+            cout << "Id: " << book.getId() << "\n";
+            cout << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
+            cout << "Title: " << book.getTitle() << "\n";
+            cout << "Year: " << book.getYearOfIssue() << "\n";
+        }
+    }
 }
+
+void workingWithFiles::searchByTitle(vector<book> &books) {
+    string title;
+    cout << "Enter title to search: ";
+    cin.ignore();
+    getline(cin, title);
+    for(const auto &book : books){
+        if(book.getTitle().find(title) != string::npos){
+            cout << "=====================================" << endl;
+            cout << "Id: " << book.getId() << "\n";
+            cout << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
+            cout << "Title: " << book.getTitle() << "\n";
+            cout << "Year: " << book.getYearOfIssue() << "\n";
+        }
+    }
+}
+
+void workingWithFiles::searchByYear(vector<book> &books) {
+    int year;
+    cout << "Enter year to search: ";
+    cin >> year;
+    for(const auto &book : books){
+        if(book.getYearOfIssue() == year){
+            cout << "=====================================" << endl;
+            cout << "Id: " << book.getId() << "\n";
+            cout << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
+            cout << "Title: " << book.getTitle() << "\n";
+            cout << "Year: " << book.getYearOfIssue() << "\n";
+        }
+    }
+}
+
+void workingWithFiles::searchByAuthorName(vector<book> &books) {
+    string authorName;
+    cout << "Enter author name to search: ";
+    cin.ignore();
+    getline(cin, authorName);
+    for (const auto &book: books) {
+        if (book.getAuthorName() == authorName) {
+            cout << "=====================================" << endl;
+            cout << "Id: " << book.getId() << "\n";
+            cout << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
+            cout << "Title: " << book.getTitle() << "\n";
+            cout << "Year: " << book.getYearOfIssue() << "\n";
+        }
+    }
+}
+
+
+
+
+
+

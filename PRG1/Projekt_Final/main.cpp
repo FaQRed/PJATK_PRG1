@@ -7,35 +7,38 @@
 #include "main.h"
 
 workingWithFiles wwf;
- vector<book> books;
-void deleteLastBook(){
+vector<book> books;
+
+void deleteLastBook() {
     books.pop_back();
 }
-void deleteBookById(int id){
-    for(auto it = books.begin(); it != books.end(); ++it){
-        if(id == it->getId()){
+
+void deleteBookById(int id) {
+    for (auto it = books.begin(); it != books.end(); ++it) {
+        if (id == it->getId()) {
             books.erase(it);
             break;
         }
     }
 }
 
-bool compareByAuthorSurname(const book& book1, const book& book2) {
+bool compareByAuthorSurname(const book &book1, const book &book2) {
     return book1.getAuthorSurname() < book2.getAuthorSurname();
 }
-bool compareByTitle(const book& book1, const book& book2) {
+
+bool compareByTitle(const book &book1, const book &book2) {
     return book1.getTitle() < book2.getTitle();
 }
-void outputVector(vector<book> &books){
+
+void outputVector(vector<book> &books) {
     for (const auto &book: books) {
-        cout  << "=====================================" << endl;
-        cout  << "Id: " << book.getId() << "\n";
-        cout  << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
-        cout  << "Title: " << book.getTitle() << "\n";
-        cout  << "Year: " << book.getYearOfIssue() << "\n";
+        cout << "=====================================" << endl;
+        cout << "Id: " << book.getId() << "\n";
+        cout << "Author: " << book.getAuthorName() << " " << book.getAuthorSurname() << "\n";
+        cout << "Title: " << book.getTitle() << "\n";
+        cout << "Year: " << book.getYearOfIssue() << "\n";
     }
 }
-
 
 
 void addBook() {
@@ -60,9 +63,11 @@ void addBook() {
 
 
 int main() {
+    system("clear");
     string fileName;
 
     do {
+        system("clear");
         cout << "\n**************************************************************************\n";
         cout << "                     WELCOME TO LIBRARY MANAGEMENT SYSTEM                   \n";
         cout << "                                  MAIN MENU                                 \n";
@@ -98,8 +103,10 @@ int main() {
                 system("clear");
                 sort(books.begin(), books.end(), compareByTitle);
                 break;
-            case 4:
-                do{
+            case 4: {
+                system("clear");
+                bool continueSearching = true;
+                do {
                     cout << "\n**************************************************************************\n";
                     cout << "                     WELCOME TO LIBRARY MANAGEMENT SYSTEM                   \n";
                     cout << "                                  SEARCH                                 \n";
@@ -109,29 +116,38 @@ int main() {
                     cout << "\t\t3. By title" << endl;
                     cout << "\t\t4. By year" << endl;
                     cout << "\t\t5. Back to main menu" << endl;
-
+                    cout << "\nPlease Enter Your Above Choice : ";
                     int criteria;
                     cin >> criteria;
+
                     switch (criteria) {
                         case 1:
-                            //searchByAuthorName();
+                            system("clear");
+                            wwf.searchByAuthorName(books);
                             break;
                         case 2:
-                            //searchByAuthorSurname();
+                            system("clear");
+                            wwf.searchByAuthorSurname(books);
                             break;
                         case 3:
-                            //searchByTitle();
+                            system("clear");
+                            wwf.searchByTitle(books);
                             break;
                         case 4:
-                            //searchByYear();
+                            system("clear");
+                            wwf.searchByYear(books);
                             break;
                         case 5:
-                            main();
+                            system("clear");
+                            continueSearching = false;
+                            break;
+                        default:
+                            cout << "Invalid option. Please try again." << endl;
                             break;
                     }
-                } while(true);
-
-
+                } while (continueSearching);
+                break;
+            }
 
             case 5:
                 system("clear");
@@ -173,9 +189,9 @@ int main() {
                 break;
             case 11:
                 system("clear");
-                if(!books.empty()){
-                outputVector(books);}
-                else cout << "Array is empty";
+                if (!books.empty()) {
+                    outputVector(books);
+                } else cout << "Array is empty";
                 break;
             case 12:
                 system("clear");
@@ -189,6 +205,9 @@ int main() {
                 cout << "Exiting from program...";
                 exit(0);
 
+            default:
+                cout << "Invalid option. Please try again." << endl;
+                break;
         }
     } while (true);
 

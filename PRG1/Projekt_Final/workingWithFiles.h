@@ -16,6 +16,10 @@ public:
     void removeFile(string fileName);
     void outputFromTxt(string filename);
     void parseFromFile(string filePath, vector<book> &books);
+    void searchByAuthorName(vector<book> &books);
+    void searchByAuthorSurname(vector<book> &books);
+    void searchByTitle(vector<book> &books);
+    void searchByYear(vector<book> &books);
 };
 
 
