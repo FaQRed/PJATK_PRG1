@@ -11,7 +11,7 @@
 
 using namespace std;
 
-void workingWithFiles::writeToTxt(vector<book> &books, string fileName) {
+void workingWithFiles::writeToTxt(vector<book> &books, const string& fileName) {
     std::ofstream txtFile(fileName + ".txt");
     if (txtFile.is_open()) {
         for (const auto &book: books) {
@@ -28,7 +28,7 @@ void workingWithFiles::writeToTxt(vector<book> &books, string fileName) {
     }
 }
 
-void workingWithFiles::outputFromTxt(string filename) {
+void workingWithFiles::outputFromTxt(const string& filename) {
     ifstream file(filename + ".txt");
     string content;
     if (file.is_open()) {
@@ -43,17 +43,17 @@ void workingWithFiles::outputFromTxt(string filename) {
 }
 
 
-void workingWithFiles::createFile(string fileName) {
+void workingWithFiles::createFile(const string& fileName) {
 
     ofstream{fileName + ".txt"};
 }
 
-void workingWithFiles::removeFile(string fileName) {
+void workingWithFiles::removeFile(const string& fileName) {
 
     remove((fileName + ".txt").c_str());
 }
 
-void workingWithFiles::parseFromFile(string fileName, vector<book> &books) {
+void workingWithFiles::parseFromFile(const string& fileName, vector<book> &books) {
 
     ifstream file(fileName + ".txt");
     string tempStr;

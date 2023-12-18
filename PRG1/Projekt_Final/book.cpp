@@ -3,9 +3,11 @@
 //
 
 #include "book.h"
+
+#include <utility>
 int counter_id = 1;
-book::book(const string &authorName, const string &authorSurname, const string &title, int yearOfIssue) : id(
-        counter_id), author_name(authorName), author_surname(authorSurname), title(title), yearOfIssue(yearOfIssue) {
+book::book(string authorName, string authorSurname, string title, int yearOfIssue) : id(
+        counter_id), author_name(std::move(authorName)), author_surname(std::move(authorSurname)), title(std::move(title)), yearOfIssue(yearOfIssue) {
     counter_id++;
 }
 int book::getId() const {
@@ -48,8 +50,8 @@ void book::setYearOfIssue(int yearOfIssue) {
     book::yearOfIssue = yearOfIssue;
 }
 
-book::book(int id, const string &authorName, const string &authorSurname, const string &title, int yearOfIssue) : id(
-        id), author_name(authorName), author_surname(authorSurname), title(title), yearOfIssue(yearOfIssue) {
+book::book(int id, string authorName, string authorSurname, string title, int yearOfIssue) : id(
+        id), author_name(std::move(authorName)), author_surname(std::move(authorSurname)), title(std::move(title)), yearOfIssue(yearOfIssue) {
 
 }
 

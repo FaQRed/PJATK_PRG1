@@ -18,7 +18,7 @@ private:
     int yearOfIssue;
 
 public:
-    book(const string &authorName, const string &authorSurname, const string &title, int yearOfIssue);
+    book(string authorName, string authorSurname, string title, int yearOfIssue);
 
     int getId() const;
 
@@ -40,7 +40,7 @@ public:
 
     void setYearOfIssue(int yearOfIssue);
 
-    book(int id, const string &authorName, const string &authorSurname, const string &title, int yearOfIssue);
+    book(int id, string authorName, string authorSurname, string title, int yearOfIssue);
 };
 
 

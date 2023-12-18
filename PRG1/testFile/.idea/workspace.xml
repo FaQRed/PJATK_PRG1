@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -21,23 +21,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85c21e96-d07b-41f1-b4cf-665e24838f6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Projekt_Final/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/book.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/book.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/book.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-af46a0aefde1eac6473e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-16T19-33-21-0353.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.cmake/api/v1/reply/target-Projekt_Final-Debug-268c386509e8a3cc62ab.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/CMakeFiles/Projekt_Final.dir/book.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/CMakeFiles/Projekt_Final.dir/book.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/CMakeFiles/Projekt_Final.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/CMakeFiles/Projekt_Final.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/CMakeFiles/Projekt_Final.dir/workingWithFiles.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/Library.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/Projekt_Final" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/Projekt_Final" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projekt_Final/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/workingWithFiles.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/workingWithFiles.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Projekt_Final/workingWithFiles.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Projekt_Final/workingWithFiles.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testFile.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/testFile.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Library.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Library.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/testFile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/testFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,36 +58,32 @@
     <option name="majorVersion" value="2023" />
     <option name="minorVersion" value="2.2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ZeAisZp9yFNcO08jmWEZOVVuTs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kiryl/Desktop/PJATK_project/PRG1/testFile&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testFile" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testFile" TARGET_NAME="testFile" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testFile" RUN_TARGET_NAME="testFile">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -101,6 +99,8 @@
       <option name="presentableId" value="Default" />
       <updated>1702772301708</updated>
       <workItem from="1702772303022" duration="1007000" />
+      <workItem from="1702782067477" duration="2186000" />
+      <workItem from="1702856070836" duration="487000" />
     </task>
     <servers />
   </component>

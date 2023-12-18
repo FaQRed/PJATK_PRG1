@@ -11,15 +11,15 @@
 class workingWithFiles {
 
 public:
-    void createFile(string fileName);
-    void writeToTxt(vector<book>& books, string fileName);
-    void removeFile(string fileName);
-    void outputFromTxt(string filename);
-    void parseFromFile(string filePath, vector<book> &books);
-    void searchByAuthorName(vector<book> &books);
-    void searchByAuthorSurname(vector<book> &books);
-    void searchByTitle(vector<book> &books);
-    void searchByYear(vector<book> &books);
+    static void createFile(const string& fileName);
+    static void writeToTxt(vector<book>& books, const string& fileName);
+    static void removeFile(const string& fileName);
+    static void outputFromTxt(const string& filename);
+    static void parseFromFile(const string& filePath, vector<book> &books);
+    static void searchByAuthorName(vector<book> &books);
+    static void searchByAuthorSurname(vector<book> &books);
+    static void searchByTitle(vector<book> &books);
+    static void searchByYear(vector<book> &books);
 };
 
 
